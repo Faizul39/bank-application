@@ -1,6 +1,24 @@
+/*
+function doubleIt(num){
+  const result = num * 2 ;
+  return result;
+}
+  const fiveDouble   = doubleIt(5);
+  const secondDouble =  doubleIt(7);
+*/
+  function getInputValue(inputId){
+    const depositInput = document.getElementById('deposit-input');
+    const depositAmountText = depositInput.value;
+    const depositAmount = parseFloat(depositAmountText)
+    depositInput.value = '';
+    return depositAmount;
+  }
+
+
+
 
 /*
-
+   (old code section) 
    Handle Deposit Button Event
    document.getElementById('deposit-button').addEventListener
    ('click',function(){
@@ -59,10 +77,11 @@
 */
 document.getElementById('deposit-button').addEventListener
 ('click',function(){
+ /*
   const depositInput = document.getElementById('deposit-input');
   const depositAmountText = depositInput.value;
   depositAmount = parseFloat(depositAmountText)
-  
+  */
   // get and update deposit total 
   const depositTotal = document.getElementById('deposit-total');
   const depositTotalText = depositTotal.innerText;
