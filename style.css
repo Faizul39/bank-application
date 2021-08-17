@@ -1,0 +1,6 @@
+body{
+    font-family: 'Rokkitt', serif;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
